@@ -29,10 +29,10 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
+| **Full Name** | [Haneen Mohammed Abiri] |
+| **Student ID** | [445052048] |
+| **University Email** | 445052048@std.psau.edu.sa |
+| **GitHub Username** | [haneen-abiri-445] |
 | **Repository Link** | [Paste your repository link here] |
  
 ---
@@ -129,71 +129,72 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [October 6, 2026, 8:00 PM]
+What I did: Set up the assignment repository and student information
+Details:
+- Opened the starter repository in VS Code.
+- Configured my GitHub account and repository.
+- Set my student ID in SchedulerSimulation.java.
+- Ran the program to make sure the project was working.
+- Created a commit for the student ID changes.
+Challenges: I initially had some confusion with GitHub and the repository setup in VS Code.
+Solution: I checked the Source Control panel and followed the Git workflow of staging, committing, and syncing the changes.
+Time spent: 1 hour
+---
 
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
+### Entry 2 - [October 6, 2026, 10:00 PM]
+What I did: Implemented Feature 1 and Feature 2
+Details:
+- Added the process priority field and related code for Feature 1.
+- Tested the program after making the changes.
+- Added the context switch counter for Feature 2.
+- Ran the scheduler again and checked that the context switch count was displayed.
+- Created separate commits for the features.
+Challenges: Understanding where each feature needed to be added without changing the original scheduling behavior was challenging.
+Solution: I worked on each feature separately, ran the program after the changes, and checked the output before moving to the next feature.
+Time spent: 2 hours
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
-
----
-
-### Entry 3 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
+### Entry 3 - [October 7, 2026, 6:00 PM]
+What I did: Implemented and tested Feature 3
+Details:
+- Added creation time, waiting time, and last ready time to the Process class.
+- Added methods to update and retrieve the waiting time.
+- Added turnaround time calculation.
+- Added a process statistics table showing burst time, waiting time, and turnaround time.
+- Fixed duplicate process entries and a syntax error during testing.
+- Committed the completed Feature 3 changes.
+Challenges: The first version of the statistics table displayed duplicate processes, and I also had a missing brace that caused a compilation error.
+Solution: I traced the problem through the processMap and changed the summary to use a completed-process list. I also checked the braces around the scheduler loop and fixed the syntax error.
+Time spent: 2 hours
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
-
----
-
-### Entry 5 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
+### Entry 4 - [October 7, 2026, 7:30 PM]
+What I did: Tested the completed features and reviewed the program output
+Details:
+- Ran the scheduler after completing the three features.
+- Checked that priorities were displayed when processes entered the ready queue.
+- Checked the total context switch count.
+- Reviewed the waiting time and turnaround time table.
+- Verified that the program completed without compilation errors.
+Challenges: Some errors appeared while integrating the waiting time feature.
+Solution: I checked the affected code section, fixed the syntax and process-tracking issues, and ran the program again.
+Time spent: 1 hour
 
 ---
 
+### Entry 5 - [October 7, 2026, 8:30 PM]
+What I did: Reviewed the assignment requirements and prepared the documentation
+Details:
+- Reviewed the required features and commit history.
+- Checked that each feature had its own commit.
+- Opened MY_WORK.md and started completing the required documentation.
+- Reviewed the final program output and the required submission checklist.
+Challenges: Making sure that all required parts of the assignment were completed and documented correctly.
+Solution: I followed the assignment checklist and checked each requirement before moving to the next part.
+Time spent: 1 hour
 ### Entry 6 - [Optional - Date and Time]
 **What I did**:
 
@@ -211,13 +212,13 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [7 hours]
 
-**Most challenging part**:
+**Most challenging part**:The most challenging part was implementing the waiting time tracking feature and making sure the final statistics were correct. I also had to fix duplicate processes in the final table and a syntax error during testing.
 
-**Most interesting learning**:
+**Most interesting learning**:The most interesting part was seeing how Round-Robin scheduling works in practice. I learned how the time quantum causes processes to return to the ready queue and how context switches happen between processes.
 
-**What I would do differently next time**:
+**What I would do differently next time**:Next time, I would plan the implementation of each feature before changing the code. I would also test smaller parts of the program more frequently to find errors earlier.
 
 ---
 
@@ -237,13 +238,13 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I learned that multithreading allows different processes to be executed using threads. In my program, the Process class implements Runnable, and a new thread is created using new Thread(process). The Thread.start() method starts the process, while Thread.sleep() is used to simulate the process running for its time quantum. I also learned that Thread.join() makes the scheduler wait for the current thread to finish before continuing. The ready queue controls the order in which processes are selected. This helped me understand how threads and the scheduler work together in a Round-Robin system.]
 
 ## Question 2: What was the most challenging part of this assignment?
 
 > 💡 **TIP:** Pick **one** specific challenge (understanding the code, one of the features, Git, the video) and say *why* it was hard.
 
-**Your Answer:** *(5-7 sentences)*
+**The most challenging part was implementing the waiting time tracking feature. I had to understand when a process enters the ready queue and when it starts running. During testing, the statistics table also displayed some processes more than once. This happened because the same process could be added to the queue again after its time quantum ended. I fixed this by keeping track of completed processes separately for the final table. I also fixed a syntax error caused by a missing brace while testing the scheduler.** *(5-7 sentences)*
 
 [Write your answer here.]
 
@@ -253,7 +254,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I overcame the challenges by working on each feature separately and testing the program after every change. When I found duplicate processes in the final table, I checked how processes were stored and re-added to the ready queue. I then used a separate list to keep track of completed processes. When a compilation error appeared, I checked the surrounding code and fixed the missing brace. I also compared the program output with the expected behavior of the scheduler. Testing after each change helped me find and solve problems before moving to the next feature.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -261,7 +262,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[Multithreading and scheduling are used in many real-world systems where multiple tasks need to share CPU time. Operating systems use scheduling techniques to manage processes and give each process a chance to run. Round-Robin scheduling is useful for interactive systems because it gives each process a fixed time quantum. Context switching allows the system to move from one process to another when the time quantum ends. A similar idea can be used in servers to handle multiple requests fairly. This assignment helped me understand how these concepts work in a practical program.]
 
 ### Optional: What would you like to learn more about?
 
@@ -293,7 +294,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[A process is an independent program or task, while a thread is a smaller unit of execution within a process. In my project, the Process class represents a simulated process, but the actual execution is handled by a Java Thread. In addProcessToQueue(), the code uses new Thread(process) to create a thread for the process. Processes generally have their own memory space, while threads within the same process can share resources. This project helped me understand the difference between the simulated process and the Java thread that executes it.]
 
 ## Question 2: Ready Queue Behavior
 
@@ -305,7 +306,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[The ready queue follows Round-Robin scheduling because each process receives a fixed time quantum of 4000ms. For example, P1 started with a burst time of 9313ms and after its first quantum, it had 5313ms remaining, so it was added back to the ready queue. After its second quantum, it had 1313ms remaining and was added back to the queue again. P1 was therefore re-queued twice before it finished its execution. This shows how Round-Robin gives each process a fair turn before returning to a process that still has remaining time.]
 
 Example from my output:
 ```
@@ -323,15 +324,15 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: [P1 is in the New state when new Thread(process) is created inside addProcessToQueue().]
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: [When does P1 become Runnable? P1 becomes Runnable when Thread.start() is called by the scheduler.]
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: [When is P1 Running? P1 is Running when its run() method starts executing and it begins its time quantum.]
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting**: [When and why would a thread be Waiting? P1's thread sleeps during Thread.sleep() while simulating its time quantum. The main thread also waits when it calls Thread.join().]
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: [When is P1 Terminated? P1 is Terminated when its run() method finishes and the thread completes its execution. ]
 
 ## Question 4: Real-World Applications
 
@@ -344,29 +345,29 @@ Example from my output:
 ### Example 1 (operating-system level): [Name of scenario]
 
 **Description**:
-[Describe the real-world scenario.]
+[An operating system uses Round-Robin scheduling to share CPU time among multiple running programs. Each running program can be treated like a process in my simulation, and the time quantum determines how long it can use the CPU before another process gets a turn. A context switch happens when the CPU moves from one process to another.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[Fairness, responsiveness, predictability? Round-Robin provides fairness because every process gets a turn. It also improves responsiveness because one process cannot keep the CPU for too long. The fixed time quantum makes the scheduling behavior predictable.]
 
 ### Example 2: [Name of application/scenario]
 
 **Description**:
-[Describe the real-world scenario or application.]
+[Describe the real-world scenario or application. A web server can use threads to handle multiple client requests at the same time. Each request can be treated like a process in my simulation, while the time quantum represents the amount of CPU time given to each request. A context switch occurs when the server switches between threads handling different requests.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[Fairness, responsiveness, predictability? Round-Robin can provide fair CPU access when many requests are competing for resources. It helps prevent one request from using the CPU for too long and improves responsiveness for other requests.]
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+1- How Round-Robin scheduling uses a fixed time quantum.
+2- How context switching allows the CPU to move between processes.
+3- How Java threads are created and managed during process execution.
 
 **Concepts I need to study more:**
-1.
-2.
+1. Different thread lifecycle states and transitions.
+2. How real operating systems implement CPU scheduling.
 
 ---
 
